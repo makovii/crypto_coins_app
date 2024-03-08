@@ -46,7 +46,7 @@ class _CryptoListScreenState extends State<CryptoListScreen> {
                 separatorBuilder: (context, index) => const Divider(),
                 itemBuilder: (context, i) {
                   final coin = state.coinsList[i];
-                  return CryptoCoinTile(coinName: coin.name, coinPriceInUSD: coin.priceInUSD, imageUrl: coin.imageUrl,);
+                  return CryptoCoinTile(coin: coin,);
                 }
               );
             }
