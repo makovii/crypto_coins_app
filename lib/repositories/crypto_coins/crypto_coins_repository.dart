@@ -30,7 +30,7 @@ class CryptoCoinsRepository implements AbstractCoinsRepository {
 
       return cryptoCoinsList;      
     } catch(e) {
-      throw e;
+      rethrow;
     }
 
   }
